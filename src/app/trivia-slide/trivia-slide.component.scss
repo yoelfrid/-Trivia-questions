@@ -28,7 +28,16 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    // .answer{
+   
+    .answer{
+        border-radius: 7px;
+        margin-bottom: 15px;
+        width: 35%;
+        height: 70px;
+        color: #ffffff;
+        text-align:center;
+     
+ // .answer1{
     //     border-radius: 7px;
     //     margin-bottom: 15px;
     //     width: 45%;
@@ -38,18 +47,6 @@
     //     color: #ffffff;
     //     text-align:center;
     // }
-    .answer1{
-        border-radius: 7px;
-        margin-bottom: 15px;
-        width: 35%;
-        // border: 1px grey solid;
-        height: 70px;
-        // background-color: red;
-        color: #ffffff;
-        text-align:center;
-        // width: 313px;
-        // height: 68px;
-
         .p-button {
             width: 100%;
             height: 100%;
@@ -57,11 +54,4 @@
         }
     }
 
-}
-.CorrectAnswer{
-    background-color: yellowgreen;
-}
-
-.p-ripple.purple .p-ink {
-    background-color: yellow;
 }

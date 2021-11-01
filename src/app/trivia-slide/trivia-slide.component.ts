@@ -41,7 +41,6 @@ export class TriviaSlideComponent implements OnInit {
 
       if (this.counteFalse == 3) {
         console.log("3 פעמים תשובות שגויות");
-
         this.finish.emit({ succsess: false, reason: 'incorrect answer' })
         this.counteFalse = 0;
       }

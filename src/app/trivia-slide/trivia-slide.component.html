@@ -1,14 +1,13 @@
 
 <div  class="wrapper">
-    <!-- <div [ngClass]="{'wrapper': !isCorrectAnswer}"> -->
 <p-card>
     <ng-template pTemplate="header">
         <div class="counter">{{counter}}</div>
     </ng-template>
-    <h4 class="question"> <i>{{triviaQuestion.question}}</i></h4>
+    <h4 class="question"> <i>{{ triviaQuestion.question}}</i></h4>
     <ng-template pTemplate="footer">
         <div class="answers">
-            <div class="answer1" *ngFor="let answer of triviaQuestion.incorrect_answers; let i = index">
+            <div class="answer" *ngFor="let answer of triviaQuestion.incorrect_answers; let i = index">
                 <!-- <p (click)="answerSelected(answer)"> {{i+1 }}. {{  answer}}</p> -->
                  <button pButton type="button" class="p-button-danger" (click)="answerSelected(answer)"> {{i+1 }}. {{  answer}}</button> 
 
@@ -19,7 +18,6 @@
 </div>
 
 
-<!-- <div [ngClass]="{'CorrectAnswer': isCorrectAnswer}">ikliuklili</div> -->
 
 
 

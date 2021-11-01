@@ -23,6 +23,10 @@ export class TriviaGameComponent implements OnInit {
   someCorrectAnswers = 0
   someIncorrectAnswers = 0
   someTimeOut = 0
+
+  score:any
+
+  display: boolean = false;
   ngOnInit(): void {
     this.primengConfig.ripple = true;
     // this.loadQuestions();
@@ -33,7 +37,9 @@ export class TriviaGameComponent implements OnInit {
     })
     this.carousel.navForward(1);
   }
-
+  showDialog() {
+    this.display = true;
+}
   // קבלת השאלות מהסרוויס ואתחול השאלה הראשונה
   // async loadQuestions() {
 
@@ -59,7 +65,8 @@ export class TriviaGameComponent implements OnInit {
     this.countQuestion++
     if (this.countQuestion == 20) {
       console.log("You've finished the trivia game");
-
+      this.score = (100/this.countQuestion) * this.someCorrectAnswers,"%"
+      this.display = true
     }
     // this.carousel.navForward(1);
   }

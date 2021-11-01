@@ -34,7 +34,7 @@ export class DataSeviceService {
       //questions.filter((i)=>!this.checkIfExists(i))
       for (let question of questions) {
         if (!(this.checkIfExists(question['results'][0].question))) {
-          console.log(question['results'][0]);
+          // console.log(question['results'][0]);
 
           this.allQuestions.push(question['results'][0])
         }
@@ -120,6 +120,7 @@ export class DataSeviceService {
     }
     return result;
   }
+
 
 
 

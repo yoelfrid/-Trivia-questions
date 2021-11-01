@@ -1,5 +1,11 @@
 <p>trivia-game works!</p>
 
+<p-dialog header="Trivia Game" [(visible)]="display">
+  <h4> You've finished the trivia game</h4> 
+   <h5>You answered correctly on {{ score}}%</h5> 
+</p-dialog>
+
+<!-- <button type="button" (click)="display = !display" icon="pi pi-info-circle">ענעננ</button> -->
 
 <div *ngIf="questionsAndAnswer.length">
     <p-carousel  [value]="questionsAndAnswer"   [numVisible]="1" [numScroll]="1"  [circular]="false">
